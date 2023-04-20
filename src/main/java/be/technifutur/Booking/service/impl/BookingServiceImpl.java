@@ -1,13 +1,15 @@
-package be.technifutur.Booking.service;
+package be.technifutur.Booking.service.impl;
 
 import be.technifutur.Booking.mapper.BookingMapper;
 import be.technifutur.Booking.model.dto.BookingDTO;
 import be.technifutur.Booking.model.entity.Booking;
 import be.technifutur.Booking.model.form.BookingForm;
 import be.technifutur.Booking.repository.BookingRepository;
+import be.technifutur.Booking.service.BookingService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class BookingServiceImpl implements BookingService {
     private final BookingRepository bookingRepository;
     private final BookingMapper mapper;
